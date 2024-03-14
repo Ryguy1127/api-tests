@@ -1,10 +1,10 @@
 From node:alpine
 
-WORKDIR C:\Users\Ryan\api-tests
+WORKDIR /usr/app
 
-COPY package.json C:\Users\Ryan\api-tests
+COPY package.json /user/app
 
-COPY server.js C:\Users\Ryan\api-tests
+COPY server.js /user/app
 
 
 RUN npm install
