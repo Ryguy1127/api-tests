@@ -1,14 +1,12 @@
-From node:alpine
+FROM node:alpine
 
-WORKDIR /usr/app
+WORKDIR /user/app
 
-COPY package.json /user/app
-
-COPY server.js /user/app
-
+COPY package.json .
+COPY server.js .
 
 RUN npm install
 
 EXPOSE 3000
 
-CMD ["node","server.js"]
+CMD ["node", "server.js"]
